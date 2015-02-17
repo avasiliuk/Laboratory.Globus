@@ -1,4 +1,4 @@
-package labaratory.globus.domain
+package laboratory.globus.domain
 
 import scala.collection.Set
 
