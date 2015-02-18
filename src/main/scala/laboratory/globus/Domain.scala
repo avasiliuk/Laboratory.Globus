@@ -1,4 +1,4 @@
-package laboratory.globus.domain
+package laboratory.globus
 
 import scala.collection.Set
 
@@ -26,4 +26,3 @@ case class PodKeeper() extends Role
 case class CustomRole(name: String) extends Role
 case class Admin() extends Role
 case class Viewer() extends Role
-
