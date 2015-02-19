@@ -1,7 +1,5 @@
 package laboratory.globus
 
-import scala.collection.Set
-
 case class Pod(employees: Set[Employee],
                parentPod: Option[Pod],
                childPods: Set[Pod],
@@ -21,8 +19,8 @@ case class Employee(pod: Pod,
                     siteUrl: String)
 
 sealed trait Role
-case class PodLead() extends Role
-case class PodKeeper() extends Role
+case object PodLead extends Role
+case object PodKeeper extends Role
 case class CustomRole(name: String) extends Role
-case class Admin() extends Role
-case class Viewer() extends Role
+case object Admin extends Role
+case object Viewer extends Role

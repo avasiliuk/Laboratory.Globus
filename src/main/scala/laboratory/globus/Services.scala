@@ -7,7 +7,7 @@ trait Service[T] {
 }
 
 trait PodService extends Service[Pod] {
-  def linkPods(pod1: Pod, pod2: Pod)
+  def linkPods(pod1: Pod, pod2: Pod): (Pod, Pod)
 }
 
 trait EmployeeService extends Service[Employee] {
